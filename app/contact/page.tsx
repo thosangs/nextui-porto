@@ -59,7 +59,6 @@ export default function Contact() {
 							className="flex justify-center items-center"
 							onClick={() => window.open(`${instagram}`, "_blank")}
 						>
-							{/* <XSVG /> */}
 							<InstagramSVG />
 						</CardBody>
 					</Link>
@@ -70,7 +69,7 @@ export default function Contact() {
 					className="col-span-full lg:row-start-1 lg:row-span-2 lg:col-start-2 cursor-pointer opacity-0 mobile-animation githubCard "
 				>
 					<Link
-						href={github}
+						href={linkedIn}
 						rel="noopener noreferrer"
 						target="_blank"
 						className="min-h-full flex justify-center items-center"

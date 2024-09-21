@@ -24,25 +24,7 @@ export default function About() {
 					className="col-span-full opacity-0 mobile-animation experiencesContent"
 					key={`experience-item-${experience.career}-${experience.company}`}
 				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						className="hidden lg:block icon icon-tabler icon-tabler-timeline absolute top-0 -right-7"
-						width="200"
-						height="200"
-						viewBox="0 0 24 24"
-						strokeWidth="2"
-						stroke="#232323"
-						fill="none"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M4 16l6 -7l5 5l5 -6"></path>
-						<path d="M15 14m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-						<path d="M10 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-						<path d="M4 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-						<path d="M20 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-					</svg>
+					{experience.svg}
 					<CardBody className="gap-2 flex-wrap">
 						<div className="flex flex-col lg:flex-col gap-2">
 							<Experience
@@ -51,6 +33,7 @@ export default function About() {
 								description={experience.description}
 								location={experience.location}
 								company={experience.company}
+								svg={experience.svg}
 							/>
 						</div>
 					</CardBody>

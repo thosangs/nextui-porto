@@ -4,4 +4,5 @@ export type experienceType = {
 	company: string;
 	location: string;
 	description: string;
+	svg: any;
 };

@@ -6,6 +6,7 @@ export const Experience = ({
 	description,
 	location,
 	company,
+	svg,
 }: experienceType) => {
 	return (
 		<div className="mb-4">
