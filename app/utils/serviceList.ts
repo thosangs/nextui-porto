@@ -7,12 +7,13 @@ export const serviceList: serviceType[] = [
 			"Berpengalaman membangun belasan data platform skala besar di GCP dan AWS.",
 	},
 	{
-		service: "Pembuatan Website Custom",
+		service: "Website Custom",
 		description:
-			"Sudah membuat banyak website yang terintegrasi dengan spreadsheet untuk kebutuhan visualisasi dan kompetisi.",
+			"Berpengalaman membuat banyak website yang terintegrasi dengan spreadsheet untuk kebutuhan visualisasi dan kompetisi.",
 	},
 	{
-		service: "Konsultasi Karir",
-		description: "Sudah lebih dari 60 sesi mentoring di dibimbing.id.",
+		service: "Konsultasi Karir & Data",
+		description:
+			"Berpengalaman dengan lebih dari 50 sesi data & karir mentoring di dibimbing.id.",
 	},
 ];

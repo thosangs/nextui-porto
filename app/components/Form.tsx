@@ -84,7 +84,7 @@ export const Form = () => {
 		<form className="flex flex-col gap-4" onSubmit={(e) => handleSubmit(e)}>
 			<h2 className="text-3xl font-bold">Kontakan Yuk</h2>
 			<p className="text-lg text-gray-400">
-				Bisa langsung isi formulir dibawah ini untuk kirim aku email
+				Bisa langsung isi formulir dibawah ini untuk kirim saya email
 			</p>
 			<Input
 				id="name"
