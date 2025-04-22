@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import { usePathname } from "next/navigation";
+import { HomeSVG } from "./icons";
 
 interface routeProps {
   label: string;
@@ -10,7 +11,7 @@ interface routeProps {
 
 const routes: routeProps[] = [
   {
-    label: "Home",
+    label: "🏠",
     url: "/",
   },
   {
@@ -22,7 +23,7 @@ const routes: routeProps[] = [
     url: "/projects",
   },
   {
-    label: "Contact",
+    label: "✉️",
     url: "/contact",
   },
 ];
