@@ -1,17 +1,88 @@
 import {
+  AirflowSVG,
+  DockerSVG,
   JavascriptSVG,
+  KafkaSVG,
   MongoDBSVG,
+  PostgreSVG,
+  PythonSVG,
   ReactSVG,
   ShadcnLandingSVG,
   ShadcnSVG,
   ShopApiSVG,
   Sk8terSVG,
+  SparkAirflowSVG,
+  SparkSVG,
+  SqlCourseSVG,
+  SqlSVG,
   TailwindSVG,
   TypescriptSVG,
 } from "../components/ui/icons";
 import { ProjectType } from "../types";
 
 export const ProjectList: ProjectType[] = [
+  {
+    icon: <SparkAirflowSVG />,
+    title: "Spark + Airflow Bootcamp",
+    subtitle: "Data Engineering with Docker",
+    technologies: [
+      {
+        name: "Apache Spark",
+        icon: <SparkSVG color="#E25A1C" size={16} />,
+      },
+      {
+        name: "Apache Airflow",
+        icon: <AirflowSVG color="#017CEE" size={16} />,
+      },
+      {
+        name: "Docker",
+        icon: <DockerSVG color="#2496ED" size={16} />,
+      },
+      {
+        name: "PostgreSQL",
+        icon: <PostgreSVG color="#336791" size={16} />,
+      },
+      {
+        name: "Apache Kafka",
+        icon: <KafkaSVG color="#231F20" size={16} />,
+      },
+      {
+        name: "Python",
+        icon: <PythonSVG color="#3776AB" size={16} />,
+      },
+    ],
+    description:
+      "A comprehensive Docker-based data engineering environment featuring Apache Spark for distributed data processing, Apache Airflow for workflow orchestration, and Apache Kafka for real-time streaming. Includes PostgreSQL database, Jupyter notebooks, and DataHub for data governance. Designed for the Dibimbing Data Engineering Bootcamp with complete containerization setup.",
+    imgUrl: "",
+    videoUrl: "",
+    githubUrl: "https://github.com/thosangs/dibimbing_spark_airflow",
+    websiteUrl: "https://github.com/thosangs/dibimbing_spark_airflow",
+  },
+  {
+    icon: <SqlCourseSVG />,
+    title: "Advanced SQL Course",
+    subtitle: "PostgreSQL Learning Repository",
+    technologies: [
+      {
+        name: "PostgreSQL",
+        icon: <PostgreSVG color="#336791" size={16} />,
+      },
+      {
+        name: "SQL",
+        icon: <SqlSVG color="#CC2927" size={16} />,
+      },
+      {
+        name: "Docker",
+        icon: <DockerSVG color="#2496ED" size={16} />,
+      },
+    ],
+    description:
+      "A comprehensive PostgreSQL project for a 3-day intensive SQL course using the classic dvdrental dataset. Features Docker setup with PostgreSQL 17, SQLPad for web-based SQL queries, and pgAdmin for database management. Includes advanced SQL topics covering window functions, CTEs, subqueries, and analytical queries with progressive examples and case studies.",
+    imgUrl: "",
+    videoUrl: "",
+    githubUrl: "https://github.com/thosangs/dibimbing_sql",
+    websiteUrl: "https://github.com/thosangs/dibimbing_sql",
+  },
   {
     icon: <ShopApiSVG />,
     title: "LJSport.id",

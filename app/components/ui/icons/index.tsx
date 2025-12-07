@@ -1,7 +1,9 @@
-export * from "./Sk8ter";
 export * from "./MagentaKitchenSVG";
-export * from "./ShopApiSVG";
 export * from "./ShadcnLandingSVG";
+export * from "./ShopApiSVG";
+export * from "./Sk8ter";
+export * from "./SparkAirflowSVG";
+export * from "./SqlCourseSVG";
 
 type IconType = { color: string; size: number };
 
