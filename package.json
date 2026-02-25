@@ -10,9 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:cloudflare": "npx @opennextjs/cloudflare build",
-    "preview": "npm run build:cloudflare && npx wrangler dev",
-    "deploy": "npm run build:cloudflare && npx wrangler deploy"
+    "preview": "npm run build && npx wrangler pages dev out",
+    "deploy": "npm run build && npx wrangler pages deploy out"
   },
   "dependencies": {
     "@nextui-org/avatar": "^2.2.0",
