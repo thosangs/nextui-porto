@@ -31,7 +31,7 @@ export default function About() {
 	}, []);
 
 	return (
-		<div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">
+		<div className="grid grid-cols-4 lg:grid-cols-3 lg:[grid-template-rows:repeat(4,minmax(100px,auto))] gap-5">
 			<Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
 				<CardBody className="flex-col items-center justify-center gap-2">
 					<Avatar
@@ -45,7 +45,7 @@ export default function About() {
 				</CardBody>
 			</Card>
 
-			<Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-2  opacity-0 mobile-animation whoAmICard">
+			<Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-2 opacity-0 mobile-animation whoAmICard">
 				<CardBody className="gap-2">
 					<div className="text-3xl font-bold">Who am I?</div>
 					<div className="text-lg text-gray-400">{whoAmI} </div>
