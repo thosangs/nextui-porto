@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
 	metadataBase: new URL("https://tukangdata.com"),
 	title: "Tukang Data",
-	description: "Thosan Girisona (Seceng) | Solusi Data Aman, Web juga Gas",
+	description: "Thosan Girisona (Seceng) | Reliable Data Solutions, Web Done Right",
 };
 
 export default function RootLayout({

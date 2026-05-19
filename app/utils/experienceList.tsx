@@ -140,7 +140,7 @@ export const experienceList: experienceType[] = [
 	},
 	{
 		career: "Data Engineer",
-		company: "Badan Pusat Statistik",
+		company: "BPS – Statistics Indonesia",
 		years: "January 2021 - October 2021",
 		location: "Jakarta, Indonesia",
 		description:
@@ -169,7 +169,7 @@ export const experienceList: experienceType[] = [
 	},
 	{
 		career: "Fullstack Web Developer & Official Statistic Dissemination Staff",
-		company: "Badan Pusat Statistik",
+		company: "BPS – Statistics Indonesia",
 		years: "October 2018 - January 2021",
 		location: "Palangkaraya, Central Kalimantan, Indonesia",
 		description:
@@ -198,7 +198,7 @@ export const experienceList: experienceType[] = [
 	},
 	{
 		career: "Official Statistic Processing and Integration Staff",
-		company: "Badan Pusat Statistik",
+		company: "BPS – Statistics Indonesia",
 		years: "January 2017 - September 2018",
 		location: "Katingan, Central Kalimantan, Indonesia",
 		description:

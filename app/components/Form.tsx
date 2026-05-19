@@ -82,15 +82,15 @@ export const Form = () => {
 
 	return (
 		<form className="flex flex-col gap-4" onSubmit={(e) => handleSubmit(e)}>
-			<h2 className="text-3xl font-bold">Kontakan Yuk</h2>
+			<h2 className="text-3xl font-bold">Let&apos;s Get in Touch</h2>
 			<p className="text-lg text-gray-400">
-				Bisa langsung isi formulir dibawah ini untuk kirim saya email
+				Fill out the form below to send me an email
 			</p>
 			<Input
 				id="name"
 				type="text"
-				label="Nama"
-				placeholder="Agus Sutopo"
+				label="Name"
+				placeholder="John Doe"
 				isInvalid={isInvalidName}
 				value={name}
 				onChange={(e) => setName(e.target.value)}
@@ -101,7 +101,7 @@ export const Form = () => {
 				name="email"
 				id="email"
 				label="Email"
-				placeholder="agus.soetopo@contoh.com"
+				placeholder="john.doe@example.com"
 				isInvalid={isInvalidEmail}
 				value={email}
 				onChange={(e) => setEmail(e.target.value)}
@@ -110,15 +110,15 @@ export const Form = () => {
 			<Textarea
 				id="message"
 				type="text"
-				label="Pesan"
-				placeholder="Ceng bantuin bikin web pushbike"
+				label="Message"
+				placeholder="Ceng, can you help me build a pushbike website?"
 				minRows={4}
 				isInvalid={isInvalidMessage}
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
-				errorMessage={isInvalidMessage && "Email kosong :)"}
+				errorMessage={isInvalidMessage && "Message can't be empty :)"}
 			/>
-			<Button type="submit">Kirim Pesan</Button>
+			<Button type="submit">Send Message</Button>
 
 			<Toaster theme="dark" />
 		</form>
