@@ -22,6 +22,68 @@ import { ProjectType } from "../types";
 
 export const ProjectList: ProjectType[] = [
   {
+    icon: <SqlCourseSVG />,
+    title: "Kuasai SQL dari Nol",
+    subtitle: "Free SQL Course Platform",
+    technologies: [
+      {
+        name: "NextJS",
+        icon: <ReactSVG color="#61DAFB" size={16} />,
+      },
+      {
+        name: "TypeScript",
+        icon: <TypescriptSVG color="#3178C6" size={16} />,
+      },
+      {
+        name: "Tailwind",
+        icon: <TailwindSVG color="#06B6D4" size={16} />,
+      },
+      {
+        name: "PostgreSQL",
+        icon: <PostgreSVG color="#336791" size={16} />,
+      },
+      {
+        name: "SQL",
+        icon: <SqlSVG color="#CC2927" size={16} />,
+      },
+    ],
+    description:
+      "A free SQL practice platform built under tukangdata.com — think LeetCode but for SQL. Learners solve real query problems organized by topic (Selection, Filter, Aggregation, Conditional, Union, Join) against a live PostgreSQL dataset, with an inline query editor, instant evaluation, sample expected output, hint system, and a real-time class leaderboard tracking who's passed, attempted, or skipped each problem.",
+    imgUrl: "/images/sql-tukangdata.webp",
+    videoUrl: "",
+    githubUrl: "NONE",
+    websiteUrl: "https://sql.tukangdata.com",
+  },
+  {
+    icon: <ShadcnLandingSVG />,
+    title: "Asset Monitor",
+    subtitle: "All-in-One Market Dashboard",
+    technologies: [
+      {
+        name: "NextJS",
+        icon: <ReactSVG color="#61DAFB" size={16} />,
+      },
+      {
+        name: "TypeScript",
+        icon: <TypescriptSVG color="#3178C6" size={16} />,
+      },
+      {
+        name: "Tailwind",
+        icon: <TailwindSVG color="#06B6D4" size={16} />,
+      },
+      {
+        name: "Shadcn",
+        icon: <ShadcnSVG color="#000000" size={16} />,
+      },
+    ],
+    description:
+      "An all-in-one monitoring dashboard tracking Gold (IDR/gram), USD/IDR exchange rate, and Brent Crude Oil prices in real-time across multiple timeframes (1H to 20T+). Includes a portfolio valuation tool that calculates total holdings from owned gold grams and USD positions, plus a curated news feed filtered by asset class.",
+    imgUrl: "/images/secengmon.webp",
+    videoUrl: "",
+    githubUrl: "NONE",
+    websiteUrl: "https://secengmon.pages.dev",
+  },
+  {
     icon: <SparkAirflowSVG />,
     title: "Spark + Airflow Bootcamp",
     subtitle: "Data Engineering with Docker",
@@ -183,7 +245,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Developing a high-performance scoring system leveraging Google Sheets and Apps Script, with real-time data synchronization to a Next.js dashboard. The system implements a secure backend API to protect sensitive spreadsheet URLs, while delivering a modern UI built with Shadcn and Tailwind CSS. Achieved perfect 100 Lighthouse SEO score through optimized metadata, semantic HTML, and performance enhancements.",
-    imgUrl: "/images/tikum.png",
+    imgUrl: "/images/tikum.webp",
     videoUrl: "",
     githubUrl: "https://github.com/thosangs/tikum_pushbike",
     websiteUrl: "https://tikum.pages.dev/",
