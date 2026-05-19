@@ -94,13 +94,15 @@ export const Project = (project: ProjectType) => {
               ></video>
             )
           ) : (
-            <Image
-              src={imgUrl}
-              alt={`${title} image`}
-              width={1080}
-              height={1080}
-              className="rounded-xl border-1 border-[#212121] w-full h-full object-cover"
-            />
+            <div className="relative w-full aspect-video rounded-xl border-1 border-[#212121] overflow-hidden">
+              <Image
+                src={imgUrl}
+                alt={`${title} image`}
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           )}
         </div>
       )}
