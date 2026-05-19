@@ -24,7 +24,7 @@ export const ProjectList: ProjectType[] = [
   {
     icon: <SqlCourseSVG />,
     title: "Kuasai SQL dari Nol",
-    subtitle: "Free SQL Course Platform",
+    subtitle: "Interactive SQL Class",
     technologies: [
       {
         name: "NextJS",
