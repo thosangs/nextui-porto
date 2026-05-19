@@ -23,8 +23,8 @@ import { ProjectType } from "../types";
 export const ProjectList: ProjectType[] = [
   {
     icon: <SqlCourseSVG />,
-    title: "Kuasai SQL dari Nol",
-    subtitle: "Interactive SQL Class",
+    title: "Interactive SQL Class",
+    subtitle: "Kuasai SQL dari Nol",
     technologies: [
       {
         name: "NextJS",
