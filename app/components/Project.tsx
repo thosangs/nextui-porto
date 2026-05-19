@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { Card, CardBody } from "@nextui-org/card";
 import { Chip } from "@nextui-org/chip";
@@ -43,6 +43,8 @@ export const Project = (project: ProjectType) => {
     vimeoHash ? `h=${vimeoHash}&` : ""
   }autoplay=1&loop=1&muted=1&playsinline=1&autopause=0&badge=0`;
 
+  const [isZoomed, setIsZoomed] = useState(false);
+
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
     if (!mq.matches) return ProjectsSectionAnimations.mobileAnimation();
@@ -55,6 +57,19 @@ export const Project = (project: ProjectType) => {
     ProjectsSectionAnimations.websiteUrlAnimation();
     ProjectsSectionAnimations.githubUrlAnimation();
   }, [hasVisual]);
+
+  useEffect(() => {
+    if (!isZoomed) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsZoomed(false);
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [isZoomed]);
 
   return (
     <div className="grid lg:grid-rows-3 grid-cols-4 gap-5 pb-4 overflow-hidden">
@@ -94,15 +109,20 @@ export const Project = (project: ProjectType) => {
               ></video>
             )
           ) : (
-            <div className="relative w-full aspect-video rounded-xl border-1 border-[#212121] overflow-hidden">
+            <button
+              type="button"
+              onClick={() => setIsZoomed(true)}
+              aria-label={`Zoom ${title} image`}
+              className="relative w-full aspect-video rounded-xl border-1 border-[#212121] overflow-hidden cursor-zoom-in group block"
+            >
               <Image
                 src={imgUrl}
                 alt={`${title} image`}
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
-            </div>
+            </button>
           )}
         </div>
       )}
@@ -200,6 +220,38 @@ export const Project = (project: ProjectType) => {
           </CardBody>
         </Link>
       </Card>
+
+      {isZoomed && hasImage && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${title} preview`}
+          onClick={() => setIsZoomed(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 sm:p-8 cursor-zoom-out"
+        >
+          <button
+            type="button"
+            onClick={() => setIsZoomed(false)}
+            aria-label="Close preview"
+            className="absolute top-4 right-4 text-white/70 hover:text-white text-3xl leading-none w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition"
+          >
+            ×
+          </button>
+          <div
+            className="relative w-full max-w-7xl aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={imgUrl}
+              alt={`${title} image enlarged`}
+              fill
+              sizes="100vw"
+              className="object-contain rounded-lg"
+              priority
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
