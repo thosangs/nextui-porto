@@ -1,87 +1,70 @@
 import { iconType } from "../types";
 import {
   TypescriptSVG,
+  JavascriptSVG,
   ReactSVG,
-  TailwindSVG,
-  MongoDBSVG,
-  ShadcnSVG,
   NextSVG,
+  TailwindSVG,
+  ShadcnSVG,
+  Html5SVG,
+  CssSVG,
+  PhpSVG,
+  LaravelSVG,
+  MysqlSVG,
+  MongoDBSVG,
+  CloudflareSVG,
   GcpSVG,
+  AwsSVG,
+  BigQuerySVG,
   SparkSVG,
   AirflowSVG,
   DbtSVG,
-  PythonSVG,
-  SqlSVG,
-  ScalaSVG,
-  DockerSVG,
+  DuckDbSVG,
   KafkaSVG,
+  PythonSVG,
+  PandasSVG,
+  ScalaSVG,
+  SqlSVG,
   PostgreSVG,
+  JupyterSVG,
+  DockerSVG,
+  GitSVG,
 } from "../components/ui/icons";
 
 let color: string = "#9ca3af";
+const s = 35;
+
 export const techonologyIconList: iconType[] = [
-  {
-    name: "Next.JS",
-    icon: <NextSVG color={color} size={35} />,
-  },
-  {
-    name: "TypeScript",
-    icon: <TypescriptSVG color={color} size={35} />,
-  },
-  {
-    name: "React",
-    icon: <ReactSVG color={color} size={35} />,
-  },
-  {
-    name: "Tailwind",
-    icon: <TailwindSVG color={color} size={35} />,
-  },
-  {
-    name: "Shadcn",
-    icon: <ShadcnSVG color={color} size={35} />,
-  },
-  {
-    name: "MongoDB",
-    icon: <MongoDBSVG color={color} size={35} />,
-  },
-  {
-    name: "Google CLoud Platform (GCP)",
-    icon: <GcpSVG color={color} size={35} />,
-  },
-  {
-    name: "Apache Spark",
-    icon: <SparkSVG color={color} size={35} />,
-  },
-  {
-    name: "Apache Airflow",
-    icon: <AirflowSVG color={color} size={35} />,
-  },
-  {
-    name: "Data Build Tool (dbt)",
-    icon: <DbtSVG color={color} size={35} />,
-  },
-  {
-    name: "Python",
-    icon: <PythonSVG color={color} size={35} />,
-  },
-  {
-    name: "SQL",
-    icon: <SqlSVG color={color} size={35} />,
-  },
-  {
-    name: "Scala",
-    icon: <ScalaSVG color={color} size={35} />,
-  },
-  {
-    name: "Docker",
-    icon: <DockerSVG color={color} size={35} />,
-  },
-  {
-    name: "Apache Kafka",
-    icon: <KafkaSVG color={color} size={35} />,
-  },
-  {
-    name: "PostgreSQLa",
-    icon: <PostgreSVG color={color} size={35} />,
-  },
+  // Web / Fullstack
+  { name: "Next.js", icon: <NextSVG color={color} size={s} /> },
+  { name: "React", icon: <ReactSVG color={color} size={s} /> },
+  { name: "TypeScript", icon: <TypescriptSVG color={color} size={s} /> },
+  { name: "JavaScript", icon: <JavascriptSVG color={color} size={s} /> },
+  { name: "Tailwind CSS", icon: <TailwindSVG color={color} size={s} /> },
+  { name: "shadcn/ui", icon: <ShadcnSVG color={color} size={s} /> },
+  { name: "HTML5", icon: <Html5SVG color={color} size={s} /> },
+  { name: "CSS", icon: <CssSVG color={color} size={s} /> },
+  { name: "PHP", icon: <PhpSVG color={color} size={s} /> },
+  { name: "Laravel", icon: <LaravelSVG color={color} size={s} /> },
+  { name: "MySQL", icon: <MysqlSVG color={color} size={s} /> },
+  { name: "MongoDB", icon: <MongoDBSVG color={color} size={s} /> },
+  { name: "Cloudflare", icon: <CloudflareSVG color={color} size={s} /> },
+
+  // Data / Cloud / Tooling
+  { name: "Google Cloud (GCP)", icon: <GcpSVG color={color} size={s} /> },
+  { name: "AWS", icon: <AwsSVG color={color} size={s} /> },
+  { name: "BigQuery", icon: <BigQuerySVG color={color} size={s} /> },
+  { name: "Apache Spark", icon: <SparkSVG color={color} size={s} /> },
+  { name: "Apache Airflow", icon: <AirflowSVG color={color} size={s} /> },
+  { name: "dbt", icon: <DbtSVG color={color} size={s} /> },
+  { name: "DuckDB", icon: <DuckDbSVG color={color} size={s} /> },
+  { name: "Apache Kafka", icon: <KafkaSVG color={color} size={s} /> },
+  { name: "Python", icon: <PythonSVG color={color} size={s} /> },
+  { name: "pandas", icon: <PandasSVG color={color} size={s} /> },
+  { name: "Scala", icon: <ScalaSVG color={color} size={s} /> },
+  { name: "SQL", icon: <SqlSVG color={color} size={s} /> },
+  { name: "PostgreSQL", icon: <PostgreSVG color={color} size={s} /> },
+  { name: "Jupyter", icon: <JupyterSVG color={color} size={s} /> },
+  { name: "Docker", icon: <DockerSVG color={color} size={s} /> },
+  { name: "Git", icon: <GitSVG color={color} size={s} /> },
 ];
