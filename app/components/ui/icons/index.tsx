@@ -4,6 +4,7 @@ export * from "./ShopApiSVG";
 export * from "./Sk8ter";
 export * from "./SparkAirflowSVG";
 export * from "./SqlCourseSVG";
+export * from "./ProjectCovers";
 
 type IconType = { color: string; size: number };
 

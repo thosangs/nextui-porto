@@ -3,25 +3,82 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --bg-blue2: #33c0dd;
+  --foreground-rgb: 245, 245, 245;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 10, 10, 10;
+  --toska: #2dd4bf;
+  --toska-dark: #14b8a6;
+  --ink: #f5f5f5;
+  --paper: #0a0a0a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --bg-blue2: #33c0dd;
-  }
+body {
+  background: var(--paper);
+  color: var(--ink);
 }
 
+/* ============ BRUTALIST LAYER ============ */
+
+/* Bold, squared-off headings */
+main h1, main h2 {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* NextUI cards (base slot uses .bg-content1/2/3): thick border + hard toska shadow, sharp corners */
+main [class~="bg-content1"],
+main [class~="bg-content2"],
+main [class~="bg-content3"] {
+  border: 2px solid var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 5px 5px 0 var(--toska) !important;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* Hover: card "presses" toward its shadow */
+main [class~="bg-content1"]:hover,
+main [class~="bg-content2"]:hover,
+main [class~="bg-content3"]:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--toska) !important;
+}
+
+/* Navbar wrapper (uses bg-content2): smaller shadow */
+nav[class*="wrapper"],
+main [class~="bg-content2"]:first-child {
+  box-shadow: 4px 4px 0 var(--toska) !important;
+}
+
+/* Squared chips / slots */
+main [class*="Chip"],
+main [data-slot="base"][class*="rounded"],
+main .chip-brutal {
+  border-radius: 0 !important;
+}
+
+/* Toska accent block (was .bg-blue) */
 .bg-blue {
-  background-color: #0d3c52;
+  background-color: var(--toska) !important;
+  color: #0a0a0a !important;
+  border-color: #0a0a0a !important;
+  box-shadow: 5px 5px 0 #0a0a0a !important;
+}
+.bg-blue :where(h1, h2, h3, div, span) {
+  color: #0a0a0a !important;
 }
 
 .text-blue {
-  color: #1684a7;
+  color: var(--toska);
 }
+
+/* Link accent */
+main a:hover {
+  color: var(--toska);
+}
+
+/* Thin brutalist scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border: 2px solid #0a0a0a; }
+::-webkit-scrollbar-thumb:hover { background: var(--toska); }

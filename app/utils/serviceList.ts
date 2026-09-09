@@ -2,18 +2,23 @@ import { serviceType } from "../types";
 
 export const serviceList: serviceType[] = [
   {
-    service: "Build-up Data Platform",
+    service: "End-to-End Data Platforms",
     description:
-      "Experienced building dozens of large-scale data platforms on GCP and AWS.",
+      "Build large-scale data platforms on GCP/AWS — ingestion, transforms (dbt/Spark), Airflow orchestration, all the way to a warehouse that's ready to use. A dozen platforms in, and well-acquainted with 3AM.",
   },
   {
-    service: "Custom Website",
+    service: "Fullstack Web Apps",
     description:
-      "Experienced building many websites integrated with spreadsheets for visualization and competition use cases.",
+      "Custom websites & apps (Next.js/React) that are fast, SEO-sharp, and wired to APIs or spreadsheets — from landing pages to real-time dashboards.",
   },
   {
-    service: "Career & Data Consulting",
+    service: "Data Viz & Maps",
     description:
-      "Delivered over 100 sessions of data & career mentoring at dibimbing.id and ITERA.",
+      "Turn raw data into dashboards and interactive maps that are actually easy to read — not just pretty, but decision-ready.",
+  },
+  {
+    service: "Data & Career Mentoring",
+    description:
+      "100+ data & career mentoring sessions at dibimbing.id and ITERA. Window functions that scare the DBA, taught gently.",
   },
 ];
