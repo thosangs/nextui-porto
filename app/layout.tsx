@@ -19,8 +19,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={`${display.variable} ${mono.variable} font-display`}>
+		<html lang="en" className="dark">
+			<body
+				className={`${display.variable} ${mono.variable} font-display bg-background text-foreground`}
+			>
 				<main className="dark text-foreground bg-background min-h-screen">
 					<NavbarSection />
 					<main className="p-4 pb-12 max-w-6xl m-auto overflow-hidden 2xl:overflow-visible">
