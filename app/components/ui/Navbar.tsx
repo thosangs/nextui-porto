@@ -11,7 +11,7 @@ interface routeProps {
 
 const routes: routeProps[] = [
   {
-    label: "🏠",
+    label: "Home",
     url: "/",
   },
   {
@@ -23,7 +23,7 @@ const routes: routeProps[] = [
     url: "/projects",
   },
   {
-    label: "✉️",
+    label: "Contact",
     url: "/contact",
   },
 ];

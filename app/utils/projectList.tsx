@@ -38,7 +38,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Reverse-engineered Kota Metro's public spatial data into one interactive map: 62 layers (RDTR zoning, road networks, sanitation, demographics) with data-driven thematic styling, concise attribute popups, and a 'drop a pin from a Google Maps link' feature. Built as flat HTML + MapLibre and deployed as a Cloudflare Worker with a small link-resolver endpoint.",
-    imgUrl: "",
+    imgUrl: "/images/peta-metro.jpg",
     videoUrl: "",
     githubUrl: "https://github.com/thosangs/peta-metro",
     websiteUrl: "https://peta-metro.tukangdata.com",
@@ -55,7 +55,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Interactive lecture material for teaching dbt & analytics engineering — from models and ref() to testing and docs. Packaged as an easy-to-follow slide site, complete with a ready-to-run PostgreSQL dataset via Docker.",
-    imgUrl: "",
+    imgUrl: "/images/dbt-lecture.jpg",
     videoUrl: "",
     githubUrl: "https://github.com/thosangs/dbt_lecture",
     websiteUrl: "https://thosangs.github.io/dbt_lecture/1",
@@ -72,7 +72,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "A staircase construction calculator: enter floor height, width, number of landings, and turn direction (L / U) — it instantly computes the count and dimensions of each step, visualized in real-time 3D that highlights the part you're editing. So builders and renovators don't have to guess.",
-    imgUrl: "",
+    imgUrl: "/images/countangga.jpg",
     videoUrl: "",
     githubUrl: "https://github.com/thosangs/countangga",
     websiteUrl: "https://thosangs.github.io/countangga/",
@@ -88,7 +88,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Work out how many tiles a room needs, no drama: enter the room size and the tile size, and get the number of boxes required plus leftover cuts. A small tool that actually gets used on-site.",
-    imgUrl: "",
+    imgUrl: "/images/countramic.jpg",
     videoUrl: "",
     githubUrl: "https://github.com/thosangs/countramic",
     websiteUrl: "https://thosangs.github.io/countramic/",
@@ -220,7 +220,7 @@ export const ProjectList: ProjectType[] = [
   {
     icon: <ShopApiSVG />,
     title: "LJSport.id",
-    subtitle: "E-commerse back-end",
+    subtitle: "E-commerce Back-End",
     technologies: [
       {
         name: "NextJS",
@@ -253,7 +253,7 @@ export const ProjectList: ProjectType[] = [
   {
     icon: <ShadcnLandingSVG />,
     title: "Racephoria",
-    subtitle: "Pushbike Realtime Scoreboard",
+    subtitle: "Realtime Race Scoreboard",
     technologies: [
       {
         name: "NextJS",
@@ -287,7 +287,7 @@ export const ProjectList: ProjectType[] = [
   {
     icon: <Sk8terSVG />,
     title: "Tikum",
-    subtitle: "Pushbike Realtime Scoreboard",
+    subtitle: "Pushbike Timing & Scoreboard",
     technologies: [
       {
         name: "NextJS",
