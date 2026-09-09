@@ -29,6 +29,11 @@ import {
   JupyterSVG,
   DockerSVG,
   GitSVG,
+  NodejsSVG,
+  MetabaseSVG,
+  LookerSVG,
+  GoogleSheetsSVG,
+  AppsScriptSVG,
 } from "../components/ui/icons";
 
 let color: string = "#9ca3af";
@@ -40,6 +45,7 @@ export const techonologyIconList: iconType[] = [
   { name: "React", icon: <ReactSVG color={color} size={s} /> },
   { name: "TypeScript", icon: <TypescriptSVG color={color} size={s} /> },
   { name: "JavaScript", icon: <JavascriptSVG color={color} size={s} /> },
+  { name: "Node.js", icon: <NodejsSVG color={color} size={s} /> },
   { name: "Tailwind CSS", icon: <TailwindSVG color={color} size={s} /> },
   { name: "shadcn/ui", icon: <ShadcnSVG color={color} size={s} /> },
   { name: "HTML5", icon: <Html5SVG color={color} size={s} /> },
@@ -54,6 +60,8 @@ export const techonologyIconList: iconType[] = [
   { name: "Google Cloud (GCP)", icon: <GcpSVG color={color} size={s} /> },
   { name: "AWS", icon: <AwsSVG color={color} size={s} /> },
   { name: "BigQuery", icon: <BigQuerySVG color={color} size={s} /> },
+  { name: "Metabase", icon: <MetabaseSVG color={color} size={s} /> },
+  { name: "Looker", icon: <LookerSVG color={color} size={s} /> },
   { name: "Apache Spark", icon: <SparkSVG color={color} size={s} /> },
   { name: "Apache Airflow", icon: <AirflowSVG color={color} size={s} /> },
   { name: "dbt", icon: <DbtSVG color={color} size={s} /> },
@@ -67,4 +75,6 @@ export const techonologyIconList: iconType[] = [
   { name: "Jupyter", icon: <JupyterSVG color={color} size={s} /> },
   { name: "Docker", icon: <DockerSVG color={color} size={s} /> },
   { name: "Git", icon: <GitSVG color={color} size={s} /> },
+  { name: "Google Sheets", icon: <GoogleSheetsSVG color={color} size={s} /> },
+  { name: "Apps Script", icon: <AppsScriptSVG color={color} size={s} /> },
 ];
